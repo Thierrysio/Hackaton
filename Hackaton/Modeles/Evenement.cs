@@ -38,7 +38,7 @@ namespace Hackaton.Modeles
         public Membre LeAnimateur { get; set; }
 
         [ForeignKey(typeof(Conference))]
-        public Membre LaConference { get; set; }
+        public Conference LaConference { get; set; }
 
         [OneToMany]
         public List<Initiation> LesInitiations { get; set; }
